@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { LayoutService } from './shared/services/layout.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'acorex-admin-panel';
+
+  constructor(private layoutService:LayoutService){
+    this.layoutService.detectMode()
+  }
+
+
 }

@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import '~@angular/cdk/overlay-prebuilt.css';
+@import '~@acorex/styles/index.scss';
+
+.material-symbols-rounded{
+    vertical-align: middle;
+}

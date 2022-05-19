@@ -1,0 +1,64 @@
+.master-layout {
+    .master-layout-side {
+        @apply ax-w-[17vw] ax-bg-white dark:ax-bg-dark-700 ax-drop-shadow-sm ax-border-e ax-border-light-100 dark:ax-border-dark-500;
+        .side-logo {
+            @apply ax-h-16 ax-flex ax-items-center ax-mx-8;
+        }
+        .side-menu{
+            @apply ax-py-4 ax-mx-4 ax-transition-all;
+            .side-menu-item{
+                @apply ax-flex ax-items-center ax-p-4 ax-text-light-700 dark:ax-text-light-400 ax-cursor-pointer ax-rounded-xl ax-mb-4;
+                &:hover{
+                    @apply ax-bg-primary-700 ax-text-primary-fore ax-shadow-lg ;
+                }
+                &.active{
+                    @apply ax-bg-primary-700 ax-text-primary-fore dark:ax-shadow-none ax-shadow-lg ax-shadow-primary-500;
+                }
+                .side-menu-item-icon{
+                    @apply ax-pe-3
+                }
+                .side-menu-item-text{
+                }
+                
+            }
+        }
+    }
+    .notification-drawer{
+        @apply ax-w-96 ax-bg-white dark:ax-bg-dark-600 ax-p-8;
+    }
+    .master-layout-main {
+        @apply ax-bg-light-100 dark:ax-bg-dark-600;
+        .main-header {
+            @apply ax-bg-white dark:ax-bg-dark-700 ax-drop-shadow-sm ax-px-2 ax-h-16 ax-flex ax-items-center ax-justify-between ax-border-b ax-border-light-100  dark:ax-border-dark-500;
+            .main-header-start-side,.main-header-end-side{
+                @apply ax-flex ax-items-center;
+            }
+            .main-header-end-side{
+                ax-button{
+                    @apply ax-ms-3;
+                }
+            }
+        }
+        .main-content {
+            @apply ax-p-8 ax-overflow-y-auto ax-overflow-x-hidden;
+            height: calc(100% - 120px);
+        }
+        .main-footer{
+            @apply ax-py-4 ax-px-8;
+
+        }
+       
+    }
+    .master-layout-title{
+        @apply ax-text-2xl ax-font-semibold
+    }
+    .notification-list{
+        @apply ax-py-8;
+        .notification-item{
+            @apply ax-flex ax-items-center ax-py-3;
+            .notification-status{
+                @apply ax-w-3 ax-h-3 ax-me-2 ax-rounded-full ax-bg-light-300;
+            }
+        }
+    }
+}
